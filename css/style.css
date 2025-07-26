@@ -25,6 +25,12 @@
 }
 
 
+html[data-theme="light"] .logo {
+    filter: invert(1) ;  /*filtro para inverter a cor*/ 
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -76,6 +82,11 @@ ul{
 .menu-texto {
     color: #56575a;
     text-transform: uppercase; /*alterar o formato do texto */
+}
+
+.logo{
+    width: 3.25rem ; /*52 px*/
+    height: 1.89rem;
 }
 #toggleTheme{
     cursor:pointer; /*mmouse vira mão ao passar por cima*/
