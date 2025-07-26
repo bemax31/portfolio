@@ -66,7 +66,7 @@ ul{
 }
 
 .menu-desktop { /*para classe se usa . */
-    /* display: none; */
+    display: none;
 }
 
 .menu {
@@ -88,9 +88,29 @@ ul{
     width: 3.25rem ; /*52 px*/
     height: 1.89rem;
 }
+
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 #toggleTheme{
     cursor:pointer; /*mmouse vira mão ao passar por cima*/
     color: var(--cor-icone) ;
     font-size: 1rem;
 }
+/*medidas responsivas*/
 
+@media (min-width: 768px) {  /*resolução de até 768px até o infinito*/
+
+    .menu-desktop{
+        display: flex;
+        min-width: 30%;
+    }
+
+    .header-toggle { /*pode controlar depois para melhorar a posição*/
+        min-width: 30%;
+    }
+
+}
