@@ -1,22 +1,85 @@
+/*definir cores tema Dark*/
+:root,  
+:root[data-theme="dark"] {
+
+    --primary-bg-color:#111227 ;
+    --cor-texto:#8f8f8f ;
+    --cor-icone: #ecc149 ;
+    --cor-link: #f0f0f0;
+    --cor-hover: ;
+    --cor--borda:#28292e;
+
+}
+
+
+/*definir cores tema Light*/  
+:root[data-theme="light"] {
+
+    --primary-bg-color: #e9e9e9;
+    --cor-texto: #323232 ;
+    --cor-icone: #5ca2e4;
+    --cor-link: #0b0b0f;
+    --cor-hover: ;
+    --cor--borda:#9a9a9c ;
+    
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*controla tudo internamente, não permite que os elementos transbordem*/
 }
+
 body {
-    background: #111217; /*cor de fundo*/
+    background: var(--primary-bg-color); /*cor de fundo*/
     color:#f0f0f0 ; /*cor de texto*/
-    font-family: ;
+    /*font-family: ;*/
 }
+
 a { 
    text-decoration: none; /*customiza a aparencia do underline do link*/
    color:#f0f0f0;
 }
-#header {
-    display: flex; /*modo de visualização*/ /*flex- visualização flexível*/
+
+ul{
+    list-style: none; 
+}
+
+#header { /*para id se usa #*/
+    display: flex; /*modo de visualização*/ 
     flex-wrap: row wrap; /*quebra de linha*/
     justify-content: space-between; /*espaço entre os elementos*/
     align-items: center;
     width: 100%; /* largura que vai ocupar na tela*/
-    padding: 0.5rem 1rem; /*área externa em medidas*/
-
+    padding: 0.5rem 1rem; /*acrescenta espaços internos*/
+    /* z-index: ; */
+    /*position: ; */
+    border-bottom: 1px solid  #56575a ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
+    /*background: ;*/
 }
+
+.menu-desktop { /*para classe se usa . */
+    /* display: none; */
+}
+
+.menu {
+    display: flex;
+    gap: 1rem ; /*espaço entre os objetos*/
+    align-items: center;
+}
+
+.menu-link.active .menu-texto,
+.menu-link:hover .menu-texto { /*hover- quando passar o mouse por cima irá destacar a palavra*/
+    color: #f0f0f0;
+}
+.menu-texto {
+    color: #56575a;
+    text-transform: uppercase; /*alterar o formato do texto */
+}
+#toggleTheme{
+    cursor:pointer; /*mmouse vira mão ao passar por cima*/
+    color: var(--cor-icone) ;
+    font-size: 1rem;
+}
+
