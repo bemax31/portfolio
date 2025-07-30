@@ -64,6 +64,8 @@ ul{
     border-bottom: 1px solid  #56575a ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
     /*background: ;*/
 }
+.menu-principal {
+    justify-content: flex-start;
 
 .menu-desktop { /*para classe se usa . */
     display: none;
