@@ -63,17 +63,7 @@ ul{
     /*position: ; */
     border-bottom: 1px solid  #56575a ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
     /*background: ;*/
-    position: relative;
 }
-
-menu-principal {
-    margin-right: auto; /* Empurra o menu para a esquerda */
-    padding-left: 0; /* Remove padding padrão */
-}
-.header-logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza perfeitamente a logo */
 
 .menu-desktop { /*para classe se usa . */
     display: none;
@@ -104,7 +94,6 @@ menu-principal {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: auto;
 }
 
 #toggleTheme{
@@ -122,7 +111,7 @@ menu-principal {
     }
 
     .header-toggle { /*pode controlar depois para melhorar a posição*/
-        min-width: auto;
+        min-width: 30%;
     }
 
 }
