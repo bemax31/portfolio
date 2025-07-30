@@ -2,31 +2,36 @@
 :root,  
 :root[data-theme="dark"] {
 
-    --primary-bg-color:#111227 ;
-    --cor-texto:#8f8f8f ;
-    --cor-icone: #ecc149 ;
+    --cor-fundo: #111227;
+    --cor-texto: #8f8f8f;
+    
+    --cor-icone: #ecc149;
+    
     --cor-link: #f0f0f0;
-    --cor-hover: ;
-    --cor--borda:#28292e;
+    --cor-hover: #e9e9e9;
+    
+    --cor-borda: #28292e;
 
 }
-
 
 /*definir cores tema Light*/  
 :root[data-theme="light"] {
 
-    --primary-bg-color: #e9e9e9;
-    --cor-texto: #323232 ;
+    --cor-fundo: #e9e9e9;
+    --cor-texto: #323232;
+    
     --cor-icone: #5ca2e4;
+    
     --cor-link: #0b0b0f;
-    --cor-hover: ;
-    --cor--borda:#9a9a9c ;
+    --cor-hover: #0b0b0f;
+    
+    --cor-borda:#9a9a9c;
     
 }
 
 
 html[data-theme="light"] .logo {
-    filter: invert(1) ;  /*filtro para inverter a cor*/ 
+    filter: invert(1);  /*filtro para inverter a cor*/ 
 
 }
 
@@ -38,14 +43,14 @@ html[data-theme="light"] .logo {
 }
 
 body {
-    background: var(--primary-bg-color); /*cor de fundo*/
-    color:#f0f0f0 ; /*cor de texto*/
+    background: var(--cor-fundo); /*cor de fundo*/
+    color: var(--cor-texto); /*cor de texto*/
     /*font-family: ;*/
 }
 
 a { 
    text-decoration: none; /*customiza a aparencia do underline do link*/
-   color:#f0f0f0;
+   color: var(--cor-link);
 }
 
 ul{
@@ -64,8 +69,6 @@ ul{
     border-bottom: 1px solid  #56575a ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
     /*background: ;*/
 }
-.menu-principal {
-    justify-content: flex-start;
 
 .menu-desktop { /*para classe se usa . */
     display: none;
@@ -73,7 +76,7 @@ ul{
 
 .menu {
     display: flex;
-    gap: 1rem ; /*espaço entre os objetos*/
+    gap: 1rem; /*espaço entre os objetos*/
     align-items: center;
 }
 
@@ -82,7 +85,7 @@ ul{
     color: #f0f0f0;
 }
 .menu-texto {
-    color: #56575a;
+    color: var(--cor-texto);
     text-transform: uppercase; /*alterar o formato do texto */
 }
 
@@ -101,7 +104,8 @@ ul{
 #toggleTheme{
     cursor:pointer; /*mmouse vira mão ao passar por cima*/
     color: var(--cor-icone) ;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    transition: all  0.3s ease-in-out;
 }
 /*medidas responsivas*/
 
