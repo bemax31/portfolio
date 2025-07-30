@@ -65,6 +65,11 @@ ul{
     /*background: ;*/
 }
 
+menu-principal {
+    margin-right: auto; /* Empurra o menu para a esquerda */
+    padding-left: 0; /* Remove padding padrão */
+}
+
 .menu-desktop { /*para classe se usa . */
     display: none;
 }
