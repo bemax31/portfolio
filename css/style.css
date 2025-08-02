@@ -88,14 +88,27 @@ ul{
 
 
 .menu-link.active .menu-texto,
+.menu-link:hover .menu-texto,
+.menu-link.active .social-icon,
 .menu-link:hover .menu-texto { /*hover- quando passar o mouse por cima irá destacar a palavra*/
-    color: #f0f0f0;
+    color: var(--cor-texto);
 
 }
 
+.social-icon{
+    color: var(--cor-texto);
+    font-size: 1rem;
+}
+
+.menu-link.active .social-icon,
+.menu-link:hover .social-icon {
+    color: var(--cor-hover);
+    transition: all 0.3s ease-in-out;
+}
+
 .logo{
-    width: 3.25rem ; /*52 px*/
-    height: 1rem;;
+    width: 3.25rem; /*52 px*/
+    height: 1rem;
 }
 
 .header-toggle {
@@ -163,9 +176,6 @@ ul{
     padding: 0.5rem 0;
  }
  
- .menu-principal {
-    gap: 1rem;
-}
 
 /*medidas responsivas*/
 
