@@ -23,27 +23,27 @@
       <nav class="menu-desktop">
           <ul class="menu menu-principal">
 
-              <li class="menu-item">
-                  <a href="#home" class="menu-link active"> <!--active - serve para deixar em realce a seleção selecionada no site -->
-                     <span class="menu-texto"> home</span> </a>
+             <li class="menu-item">
+                <a href="#home" class="menu-link active"> <!--active - serve para deixar em realce a seleção selecionada no site -->
+                    <span class="menu-texto"> home</span> </a>
                 <!--span - tag que serve para fazer pequenas formatações específicas-->
-               </li>
+             </li>
 
-              <li class="menu-item">
-                  <a href="#projetos" class="menu-link"> 
-                      <span class="menu-texto"> projetos</span> </a>
-               </li>
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link"> 
+                   <span class="menu-texto"> projetos</span> </a>
+            </li>
 
-                <li class="menu-item">
-                  <a href="#sobre" class="menu-link"> 
-                     <span class="menu-texto">sobre</span> </a>
-                 </li>
+            <li class="menu-item">
+                 <a href="#sobre" class="menu-link"> 
+                    <span class="menu-texto">sobre</span> </a>
+            </li>
 
-                <li class="menu-item">
-                   <a href="#contato" class="menu-link"> 
-                     <span class="menu-texto">contato</span> </a>
-                 </li>
-              </ul>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link"> 
+                   <span class="menu-texto">contato</span> </a>
+            </li>
+           </ul>
         </nav>
 
         <!--Logo-->
@@ -55,8 +55,13 @@
         </div>
 
       <div class="header-toggle">
-        <i id="toggleTheme" class="bi bi-sun"> </i>
+        <i id="toggleTheme" class="bi bi-sun"></i>
         <!--bi bi-sun - bootstrap icon-->
+        <button id ="menuHamburger" class="btn-menu-mobile">
+          <i class="bi bi-list"> </i> <!--i = icone-->
+
+        </button>
+
       </div>
 
     </header>
@@ -65,7 +70,35 @@
 
     <!--MENU MOBILE-->
 
-    <nav class="menu-mobile">
+    <nav  id="menuMobile" class=" menu menu menu-principal menu-mobile">
+
+      <ul class="menu-lista">
+
+         <li class="menu-item">
+            <a href="#home" class="menu-link active">
+                <span class="menu-texto"> home</span> 
+             </a>
+        </li>
+
+        <li class="menu-item">
+            <a href="#projetos" class="menu-link"> 
+               <span class="menu-texto"> projetos</span>
+             </a>
+        </li>
+
+        <li class="menu-item">
+            <a href="#sobre" class="menu-link"> 
+              <span class="menu-texto">sobre</span> 
+             </a>
+         </li>
+
+         <li class="menu-item">
+            <a href="#contato" class="menu-link"> 
+               <span class="menu-texto">contato</span> 
+            </a>
+          </li>
+
+      </ul>
       
     </nav>
 
