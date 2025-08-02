@@ -49,7 +49,7 @@ body {
 
 a { 
    text-decoration: none; /*customiza a aparencia do underline do link*/
-   color:#f0f0f0;
+   color:var(--cor-link);
 }
 
 ul{
@@ -126,6 +126,7 @@ ul{
     display: flex;
     align-items: center; /*alinhar div*/
     justify-content: center; /*alinhar div*/
+    cursor: pointer;
 }
 
 /*Menu mobile (estilo e animação) */
@@ -136,7 +137,7 @@ ul{
     right:0;
     background: var(--cor-fundo-secundaria);
     z-index: 100;
-    transform: translateX(100); /*pesquisar depois*/
+    transform: translateX(100%); /*pesquisar depois*/
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
@@ -161,6 +162,10 @@ ul{
     font-size: 1rem;
     padding: 0.5rem 0;
  }
+ 
+ .menu-principal {
+    gap: 1rem;
+}
 
 /*medidas responsivas*/
 
@@ -176,7 +181,13 @@ ul{
     }
 
     .btn-menu-mobile{
-        display:none;
+        display: none;
     }
 
+    #home {
+        padding-top: 6rem;
+    }
+    
+
 }
+
