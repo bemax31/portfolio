@@ -3,12 +3,17 @@
 :root[data-theme="dark"] {
 
     --cor-fundo:#111227 ;
-    --cor-fundo-secundaria: #28292e;
-    --cor-texto:#8f8f8f ;
-    --cor-icone: #ecc149 ;
+    --cor-fundo-secundaria: #28292E;
+    
+    --cor-texto:#8f8f8f;
+    
+    --cor-icone: #ffa927;
+    
     --cor-link: #f0f0f0;
-    --cor-hover: #e9e9e9 ;
+    --cor-hover: #e9e9e9;
+    
     --cor--borda:#28292e;
+    
     --icone-menu-mobile: #e9e9e9;
 
 }
@@ -19,12 +24,17 @@
 
     --cor fundo: #e9e9e9;
     --cor-fundo-secundaria: #c7c8c9;
-    --cor-texto: #323232 ;
-    --cor-icone: #5ca2e4;
-    --cor-link: #0b0b0f;
+
+    --cor-texto: #808080;
+
+    --cor-icone: #12a3f7;
+
+    --cor-link: #8f8f8f;
     --cor-hover: #0b0b0f;
-    --cor--borda:#9a9a9c ;
-    --icone-menu-mobile:#9a9a9c ;
+
+    --cor--borda:#9a9a9c;
+
+    --icone-menu-mobile:#0b0b0f;
     
 }
 
@@ -197,6 +207,7 @@ ul{
     
 
 }
+
 
 
 
