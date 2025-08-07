@@ -42,14 +42,14 @@ html[data-theme="light"] .logo {
 }
 
 body {
-    background: var(--primary-bg-color); /*cor de fundo*/
-    color:#f0f0f0 ; /*cor de texto*/
+    background: var(--cor-fundo); /*cor de fundo*/
+    color: var(--cor-texto); /*cor de texto*/
     /*font-family: ;*/
 }
 
 a { 
    text-decoration: none; /*customiza a aparencia do underline do link*/
-   color:var(--cor-link);
+   color: var(--cor-link);
 }
 
 ul{
@@ -65,8 +65,8 @@ ul{
     padding: 0.5rem 1rem; /*acrescenta espaços internos*/
     z-index: 200; /*Sistema de camadas -  */ 
     position: fixed; 
-    border-bottom: 1px solid  var(--cor--borda) ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
-    background: var(--cor-fundo-secundaria) ;
+    border-bottom: 1px solid  var(--cor-borda) ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
+    background: var(--cor-fundo) ;
 }
 
 .menu-desktop { /*para classe se usa . */
@@ -80,7 +80,7 @@ ul{
 }
 
 .menu-texto {
-    color:var(--cor-texto);
+    color: var(--cor-texto);
     text-transform: uppercase; /*alterar o formato do texto */
     font-size: 0.75rem;
     font-weight: 600; /*expessura da fonte*/
@@ -89,18 +89,15 @@ ul{
 
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-texto,
-.menu-link.active .social-icon,
-.menu-link:hover .menu-texto { /*hover- quando passar o mouse por cima irá destacar a palavra*/
-    color: var(--cor-texto);
+    color: var(--cor-hover);
 
 }
 
 .social-icon{
     color: var(--cor-texto);
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
-.menu-link.active .social-icon,
 .menu-link:hover .social-icon {
     color: var(--cor-hover);
     transition: all 0.3s ease-in-out;
@@ -119,7 +116,7 @@ ul{
 
 #toggleTheme{
     cursor:pointer; /*mmouse vira mão ao passar por cima*/
-    color: var(--cor-icone) ;
+    color: var(--cor-icone);
     font-size: 1.2rem;
     transition: all  0.3s ease-in-out;
 }
@@ -154,7 +151,7 @@ ul{
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
-    border-left: 1px solid var(--cor--borda);
+    border-left: 1px solid var(--cor-borda);
     height: 100vh ; /*VH= VIEWPORT HEIGHT*/
     width: 25%; /*VW= VIEWPORT WIDTH*/
     transition: 0.3s ease-in-out; /*efeito do icone alternar entre X e o menu*/
@@ -200,4 +197,5 @@ ul{
     
 
 }
+
 
