@@ -326,6 +326,21 @@ p {
     padding: 2.5rem 1rem;
     }
 
+.conhecimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: var(--cor-fundo-secundaria);
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);/*arumar depois para cores mais suavéis,tons de azul?*/
+    padding: 6.25rem 1rem 2rem;
+    margin-top: -5.5rem; /*também é possível trabalhar com números negativos*/
+}
+
+.conhecimento h2{
+    font-size: 2rem;
+}
+
 /*medidas responsivas*/
 @media (max-width: 768px) {  /*até 768px*/
 
