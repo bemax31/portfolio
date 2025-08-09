@@ -1,25 +1,46 @@
+/* google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+/*fonte inter
+
+font-family: "Inter", sans-serif;
+
+League spartan
+
+
+ font-family: "League Spartan", sans-serif;
+
+
+*/
+:root {
+    --fonte-menu: "Inter", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+    --fonte-titulo: "League Spartan", sans-serif;
+}
+
+
 /*definir cores tema Dark*/
-:root,  
+:root,
 :root[data-theme="dark"] {
 
     --cor-fundo:#111227 ;
     --cor-fundo-secundaria: #28292E;
-    
+
     --cor-texto:#8f8f8f;
-    
+
     --cor-icone: #ffa927;
-    
+
     --cor-link: #f0f0f0;
     --cor-hover: #e9e9e9;
-    
+
     --cor-borda:#28292e;
-    
+
     --icone-menu-mobile: #e9e9e9;
 
 }
 
 
-/*definir cores tema Light*/  
+/*definir cores tema Light*/
 :root[data-theme="light"] {
 
     --cor-fundo: #e9e9e9;
@@ -35,12 +56,12 @@
     --cor-borda:#9a9a9c;
 
     --icone-menu-mobile:#0b0b0f;
-    
+
 }
 
 
 html[data-theme="light"] .logo {
-    filter: invert(1) ;  /*filtro para inverter a cor*/ 
+    filter: invert(1) ;  /*filtro para inverter a cor*/
 
 }
 
@@ -57,24 +78,29 @@ body {
     /*font-family: ;*/
 }
 
-a { 
+a {
    text-decoration: none; /*customiza a aparencia do underline do link*/
    color: var(--cor-link);
 }
 
 ul{
-    list-style: none; 
+    list-style: none;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 200;
 }
 
 #header { /*para id se usa #*/
-    display: flex; /*modo de visualização*/ 
+    display: flex; /*modo de visualização*/
     flex-wrap: row wrap; /*quebra de linha*/
     justify-content: space-between; /*espaço entre os elementos*/
     align-items: center;
     width: 100%; /* largura que vai ocupar na tela*/
     padding: 0.5rem 1rem; /*acrescenta espaços internos*/
-    z-index: 200; /*Sistema de camadas -  */ 
-    position: fixed; 
+    z-index: 200; /*Sistema de camadas -  */
+    position: fixed;
     border-bottom: 1px solid  var(--cor-borda) ; /*embaixo do cabeçalho, haverá uma linha de 1 px sólida e cinza*/
     background: var(--cor-fundo) ;
 }
@@ -94,6 +120,8 @@ ul{
     text-transform: uppercase; /*alterar o formato do texto */
     font-size: 0.75rem;
     font-weight: 600; /*expessura da fonte*/
+    font-family:var(--fonte-menu);
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -182,7 +210,39 @@ ul{
     font-size: 1rem;
     padding: 0.5rem 0;
  }
- 
+
+
+ /*Flexbox*/
+ #home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+ .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+ }
+
+ /*centralizar a estrutura do video
+
+ .main-content .video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ */
+ .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .video iframe {
+    width: 50%;
+    aspect-ratio: 16/9;
+ }
 
 /*medidas responsivas*/
 
@@ -204,9 +264,10 @@ ul{
     #home {
         padding-top: 6rem;
     }
-    
+
 
 }
+
 
 
 
