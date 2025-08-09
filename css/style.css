@@ -252,6 +252,49 @@ p {
     gap: 1.5rem;
  }
 
+
+ .menu-social {
+    gap: 1.2rem;
+ }
+
+ .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: var(--cor-titulo);
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius:  .5rem 2rem;/*arredonda os cantos*/ /*é possível mudar o tamnanho de cada borda*/
+    width: 100%;
+    transition: .3s ease-in-out;
+    gap: 0.625rem;
+ }
+
+ .btn-primario{
+    border: 1px solid var(--cor-titulo);
+ }
+
+ .btn:hover {
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+    background: var(--cor-hover);
+ }
+
+ .btn span,
+ .btn i {
+    color: var(--cor-titulo);
+    text-transform: uppercase;
+ }
+
+ .btn:hover span,
+ .btn:hover i {
+    color: var(--cor-fundo);
+    transition: ease-in-out 0.3s;
+    font-weight: bold;
+ }
+/*site webflow e parallax/okalpha*/
  /*centralizar a estrutura do video
 
  .main-content .video{
@@ -260,6 +303,8 @@ p {
     justify-content: center;
  }
  */
+
+
  .video{
     display: flex;
     justify-content: center;
@@ -330,6 +375,9 @@ p {
  @media (max-width: 1200px) {
     #home{
         padding: 6rem 6rem 2rem;
+    }
+    .main-content .btn {
+        width: auto;
     }
  }
 
