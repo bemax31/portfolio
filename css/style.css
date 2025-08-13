@@ -348,7 +348,7 @@ p {
     justify-content: flex-start;
     align-items: center;
     background: var(--cor-fundo-secundaria);
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);/*arumar depois para cores mais suavéis,tons de azul, roxo e lilás?*/
+    background: linear-gradient(90deg,rgba(18, 37,93 , 1) 0%, rgba(85, 37, 93, 1) 50%, rgba(115, 37, 93, 1) 100%);/*arumar depois para cores mais suavéis,tons de azul, roxo e lilás?*/
     padding: 6.25rem 1rem 2rem;
     margin-top: -5.5rem; /*também é possível trabalhar com números negativos*/
 }
@@ -427,6 +427,7 @@ p {
         font-size: 4.5rem;
     }
   }
+
 
 
 
