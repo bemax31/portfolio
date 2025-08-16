@@ -85,6 +85,10 @@ html[data-theme="light"] .logo {
     scrollbar-color: var(--scrollbar) transparent;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body {
     background: var(--cor-fundo); /*cor de fundo*/
     color: var(--cor-texto); /*cor de texto*/
@@ -118,6 +122,9 @@ h3{
     text-transform: uppercase;
     color: var(--cor-titulo);
     font-weight: 200;
+}
+h3{
+    font-size: 1.55rem;
 }
 strong{
     font-weight:400;
@@ -359,6 +366,90 @@ p {
     letter-spacing: normal;
 
 }
+
+/*------------------------------------projetos---------------------------------- */
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scroll-margin-top: 2.5rem; /*acrescenta uma margem top ao rolar a tela*/
+}
+.projeto-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 15px;
+}
+
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 40px;
+}
+.card-cover{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.card-title{ /*h3*/
+    color:var(--cor-titulo);
+    font-weight: 400;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+
+}
+
+.card-description {
+    font-size: 1.25rem;
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+}
+.card-lista{
+    margin-left: 1.25rem;
+    font-family: var(--fonte-menu);
+    /*color - muda a cor do texto*/
+}
+.card-item i{
+    margin-right: 10px;
+}
+.card-item{
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card-item i:hover {
+    color:var(--cor-hover)
+}
+.card-button{
+    display: flex;
+    flex-flow: row; /*dois botões ROW e WRAP- quebra de linha quando há 2 botões*/
+    justify-content: center;
+    align-items: center;
+}
+.projetos .btn-primario{
+    margin: auto;
+    width: auto;
+}
+.card-button{
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    /*color*/
+}
+
+
 /*IMAGEM CSS*/
 /*background-image url : */
 /*background-repeat: no-repeat;*/
@@ -412,6 +503,26 @@ p {
 
 }
 /*Fim min-width 768px */
+
+
+@media (min-width: 992px){
+    .projeto-card{
+        flex-direction: row;
+    }
+    .card-cover{
+        width: 55%;
+    }
+    .projeto-card.card-reverse{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+
+
+}
+
+
  @media (max-width: 1200px) {
     #home{
         padding: 6rem 6rem 2rem;
@@ -429,6 +540,21 @@ p {
     h2{
         font-size: 4.5rem;
     }
+
+    .conhecimento,
+    .projetos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
+    .conhecimento h2{
+        font-size: 4.5rem;
+        text-align: start;
+    }
+
+    h3 {
+        font-size: 3.25rem;
+    }
+
   }
 
 
