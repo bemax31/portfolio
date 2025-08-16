@@ -348,7 +348,7 @@ p {
     justify-content: flex-start;
     align-items: center;
     background: var(--cor-fundo-secundaria);
-    background: linear-gradient(90deg,rgba(27, 154, 204 , 1) 0%, rgba(169, 122, 235, 1) 50%, rgba(215, 117, 235, 1) 100%);/*arumar depois para cores mais suavéis,tons de azul, roxo e lilás?*/
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);/*arumar depois para cores mais suavéis,tons de azul, roxo e lilás?*/
     padding: 6.25rem 1rem 2rem;
     margin-top: -5.5rem; /*também é possível trabalhar com números negativos*/
 }
@@ -359,6 +359,9 @@ p {
     letter-spacing: normal;
 
 }
+/*IMAGEM CSS*/
+/*background-image url : */
+/*background-repeat: no-repeat;*/
 
 /*medidas responsivas*/
 @media (max-width: 768px) {  /*até 768px*/
@@ -427,8 +430,6 @@ p {
         font-size: 4.5rem;
     }
   }
-
-
 
 
 
