@@ -473,13 +473,22 @@ p {
 }
 
 .sobre-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
 
 }
 
 .sobre-icones{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--cor-texto)
 
 }
 .sobre-icones i{
+    font-size: 1.25rem;
 
 }
 
@@ -490,6 +499,12 @@ p {
     text-align: justify;
     gap: 0.5rem;
 
+}
+.sobre-content2 .row1,
+.sobre-content2 .row2{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 
@@ -577,6 +592,16 @@ p {
         justify-content: flex-start;
         align-items: flex-start;
         gap: 4rem;
+   }
+
+   .description-button{
+    justify-content: flex-start;
+   }
+
+   .card-button .btn,
+   .description-button .btn{ /*botão conecte-se comigo fique padrão*/
+    width: auto;
+
    }
 
 
