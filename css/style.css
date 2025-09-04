@@ -513,6 +513,11 @@ p {
     width: 100%;
 }
 
+.accordion-item {
+    width: 100%;
+    display: inline-block;
+}
+
 .accordion-header{
     display: flex;
     width: 100%;
@@ -571,6 +576,124 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--cor-fundo-secundaria);
+    border-bottom: 1px solid var(--cor-fundo-secundaria);
+}
+
+.contato p {
+    text-align: center;
+}
+
+.contato .btn {
+    width: auto;
+}
+
+.contato .menu-social {
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID CSS */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.contato-formulario,
+.contato-mapa {
+    width: 100%;
+}
+
+.contato-formulario h2 {
+    margin-bottom: 1rem;
+    color: var(--cor-titulo);
+    /* text-transform: uppercase; */
+    /* letter-spacing: normal; */
+    text-align: start;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-contato input, 
+.form-contato textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: var(--cor-titulo);
+    background: var(--cor-fundo-secundaria);
+    border-radius: .5rem;
+    border: none;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+    font-size: 1rem;
+    opacity: 1;
+    font-family: var(--fonte-corpo);
+    color: var(--scrollbar);
+}
+
+/* .form-contato label {
+    font-size: ;
+    font-family: var();
+    color: var();
+    text-align: start;
+} */
+
+.form-contato textarea {
+    line-height: 1.5;
+}
+
+.form-contato button {
+    align-items: center;
+    align-self: flex-start;
+    display: flex;
+    gap: .5rem;
+}
+
+.contato-mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 2px 10px var(--cor-icone);
+}
+
+/* RODA PÉ */
+
+footer p {
+    font-size: .85rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer i {
+    font-size: .85rem;
+    color: #0598ed;
+}
+
+.footer-link {
+    color: var(--cor-texto);
+    transition: all .3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--cor-hover);
+}
 
 
 /*IMAGEM CSS*/
@@ -582,6 +705,17 @@ p {
 
     #home {
         padding-top: 6rem;
+    }
+  .contato-grid {
+        grid-template-columns: 1fr;
+    }
+    .contato-formulario,
+    .contato-mapa {
+        width: 100%;
+    }
+
+    .contato-formulario h2 {
+        text-align: center;
     }
 
 }
@@ -622,6 +756,16 @@ p {
     }
     h2{
         font-size: 3rem;
+    }
+  .sobre-content2 {
+        align-items: stretch;
+    }
+    .contato {
+        padding: 6rem;
+    }
+
+    .contato p {
+        width: 80%;
     }
 
 }
@@ -665,8 +809,10 @@ p {
     width: auto;
 
    }
-
-
+ 
+    .sobre-content2 {
+        align-items: stretch;
+    }
 
 }
 
@@ -689,6 +835,10 @@ p {
         font-size: 4.5rem;
     }
 
+   /* SOBRE */
+    h3 {
+        font-size: 3.25rem;
+
     .conhecimento,
     .projetos,
     .sobre {
@@ -704,6 +854,7 @@ p {
     }
 
   }
+
 
 
 
