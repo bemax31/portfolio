@@ -41,7 +41,8 @@ League spartan
 
     --sombra: rgba(245, 245, 245, 0.454);
     --scrollbar: #8f8f8f;
-
+    --btn-topo:#f0f0f0;
+    --icone-topo:#28292e;
 
 }
 
@@ -67,6 +68,8 @@ League spartan
 
     --sombra: rgba(31, 31, 31, 0.454);
     --scrollbar:#0b0b0f;
+     --btn-topo:#28292e;
+    --icone-topo:#f0f0f0;
 
 }
 
@@ -627,7 +630,7 @@ p {
     gap: 1rem;
 }
 
-.form-contato input, 
+.form-contato input,
 .form-contato textarea {
     width: 100%;
     padding: 0.75rem 1rem;
@@ -693,6 +696,39 @@ footer i {
 
 .footer-link:hover {
     color: var(--cor-hover);
+}
+
+
+/*Botão voltar para o topo*/
+
+#btn-topo {
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    border: none;
+    background: var(--btn-topo);
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transform: all .3s ease-in-out;
+    display: ;
+}
+
+
+#btn-topo i{
+   font-size: 2rem;
+   color: var(--icone-topo);
+
+}
+
+#btn-topo:hover{
+   filter:brightness(50%)/*reduz o brilho do elemento*/
 }
 
 
@@ -809,7 +845,7 @@ footer i {
     width: auto;
 
    }
- 
+
     .sobre-content2 {
         align-items: stretch;
     }
@@ -826,7 +862,7 @@ footer i {
     }
  }
 
-  @media (min-width: 1400px){
+  @media (min-width: 1400px) {
     h1{
         font-size: 6.25rem;
     }
@@ -854,7 +890,7 @@ footer i {
     }
 
   }
-
+}
 
 
 
